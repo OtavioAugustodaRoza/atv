@@ -1,28 +1,23 @@
 import { createRouter, createWebHistory } from 'vue-router';
-
+import PetsView from '../views/PetsView.vue';
+import AddPetsView from '../views/AddPetsView.vue';
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: () => import('../views/HomeView.vue')
+      redirect: '/pets',
     },
-       {
-       path: '/',
-       name: 'pets',
-       component: () => import('../views/PetView.vue'),
-     }, 
+    {
+      path: '/pets',
+      name: 'pets',
+      component: PetsView,
+    },
     {
       path: '/pets/novo',
-      name: 'pet-novo',
-      component: () => import('../views/AddPetView.vue'),
+      name: 'addPet',
+      component: AddPetsView,
     },
-    // },  {
-    //   path: '/',
-    //   name: 'tutores',
-    //   component: () => import('../views/TutorView.vue'),
-    // },
   ],
 });
 
