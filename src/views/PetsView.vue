@@ -58,8 +58,22 @@ onMounted(carregarDados);
           v-for="pet in pets"
           :key="pet.id"
         >
-          <td>{{ pet.id }}</td>
-          <td>{{ pet.nome }}</td>
+          <td>
+            <RouterLink
+              class="text-decoration-none"
+              :to="{ name: 'petDetail', params: { id: pet.id } }"
+            >
+              {{ pet.id }}
+            </RouterLink>
+          </td>
+          <td>
+            <RouterLink
+              class="text-decoration-none text-body"
+              :to="{ name: 'petDetail', params: { id: pet.id } }"
+            >
+              {{ pet.nome }}
+            </RouterLink>
+          </td>
           <td>{{ pet.especie }}</td>
           <td>{{ nomeDoTutor(pet.tutorId) }}</td>
         </tr>
