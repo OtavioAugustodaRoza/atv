@@ -3,17 +3,44 @@
     {
       "id": "1",
       "nome": "Ana",
-      "telefone": "47999990000"
+      "cpfCnpj": "111.222.333-44",
+      "telefone": "47999990000",
+      "email": "ana@example.com",
+      "dataNascimento": "1995-04-12",
+      "rua": "Rua das Flores",
+      "numero": "120",
+      "bairro": "Centro",
+      "cidade": "Araquari",
+      "estado": "SC",
+      "cep": "89245-000"
     },
     {
       "id": "2",
       "nome": "Carlos",
-      "telefone": "47988880000"
+      "cpfCnpj": "222.333.444-55",
+      "telefone": "47988880000",
+      "email": "carlos@example.com",
+      "dataNascimento": "1988-09-23",
+      "rua": "Rua dos Ipês",
+      "numero": "350",
+      "bairro": "Vila Nova",
+      "cidade": "Joinville",
+      "estado": "SC",
+      "cep": "89237-000"
     },
     {
       "id": "3",
       "nome": "Cat",
-      "telefone": "47988880000"
+      "cpfCnpj": "333.444.555-66",
+      "telefone": "47988880000",
+      "email": "cat@example.com",
+      "dataNascimento": "2000-02-18",
+      "rua": "Rua das Acácias",
+      "numero": "85",
+      "bairro": "Centro",
+      "cidade": "São Francisco do Sul",
+      "estado": "SC",
+      "cep": "89240-000"
     }
   ],
   "pets": [
@@ -40,6 +67,12 @@
       "especie": "Tartaruga",
       "tutorId": "3",
       "id": "TWSmes1zOng"
+    },
+    {
+      "nome": "c",
+      "especie": "Gato",
+      "tutorId": "1",
+      "id": "w38nK9Tax_M"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

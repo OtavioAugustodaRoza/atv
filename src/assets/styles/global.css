@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0f172a;
+}
+
+.navbar {
+  --bs-navbar-padding-y: 0.3125rem;
+}
+
+.app-layout {
+  min-height: calc(100vh - 50px);
+}
+
+.sidebar {
+  padding: 1rem 0.625rem;
+}
+
+.sidebar .nav-link {
+  color: #566074;
+  line-height: 1.375;
+}
+
+.sidebar .nav-link[href$='/novo'] {
+  color: var(--bs-primary);
+}
+
+.sidebar .nav-link.active {
+  color: #fff;
+}
+
+.app-content {
+  min-width: 0;
+  padding: 1.25rem;
+}
+
+.tutor-page h1 {
+  margin-bottom: 0.25rem;
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.tutor-page .text-body-secondary {
+  color: #667085 !important;
+}
+
+.tutor-form .form-label {
+  margin-bottom: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.tutor-form .form-control,
+.tutor-form .form-select {
+  border-color: #cfd7e5;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  min-height: 2.375rem;
+}
+
+.tutor-form .form-control::placeholder {
+  color: #768198;
+  opacity: 1;
+}
+
+.tutor-form .btn {
+  font-size: 0.875rem;
+  border-radius: 0.25rem;
+}
+
+.tutor-form .btn-outline-secondary {
+  --bs-btn-color: #0f172a;
+  --bs-btn-border-color: #bfc7d4;
+}

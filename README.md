@@ -1,9 +1,12 @@
-# Nome do projeto
+# PetSchool — Pets e Tutores
 
-> Substitua este título e esta descrição pelas informações do seu projeto.
+Aplicação para gerenciar pets e seus tutores. Permite cadastrar, listar,
+visualizar e remover tutores com nome e telefone, usando a Fetch API e o
+JSON Server para persistir os dados em `db.json`.
 
-Descreva brevemente o objetivo da aplicação, o problema que ela resolve e o
-público ao qual se destina.
+O formulário de tutores também permite informar CPF/CNPJ, e-mail, data de
+nascimento e endereço (rua, número, bairro, cidade, estado e CEP). Esses campos
+são opcionais e ficam disponíveis na visualização e na edição do tutor.
 
 ## Tecnologias
 
@@ -12,7 +15,8 @@ público ao qual se destina.
 - Vue Router;
 - Bootstrap 5;
 - Bootstrap Icons;
-- Axios.
+- Fetch API;
+- JSON Server.
 
 ## Pré-requisitos
 
@@ -62,7 +66,17 @@ npm install
 
 ## Execução
 
-Inicie o servidor de desenvolvimento:
+Em um terminal, inicie a API:
+
+```bash
+npm run api
+```
+
+A API ficará disponível em `http://localhost:3000`. Os endpoints de tutores
+são `GET /tutores`, `GET /tutores/:id`, `POST /tutores` e `DELETE /tutores/:id`.
+O JSON Server gera o ID automaticamente no cadastro.
+
+Em outro terminal, inicie a aplicação:
 
 ```bash
 npm run dev
@@ -73,6 +87,10 @@ O terminal apresentará o endereço local da aplicação, normalmente:
 ```text
 http://localhost:5173
 ```
+
+Acesse `/tutores` para listar, visualizar ou remover tutores e
+`/tutores/novo` para cadastrar. Os detalhes ficam em `/tutores/:id`.
+Após salvar, a aplicação retorna à listagem; após remover, a tabela é atualizada.
 
 Outros comandos disponíveis:
 

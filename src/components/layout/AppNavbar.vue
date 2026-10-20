@@ -7,7 +7,7 @@ import { RouterLink } from 'vue-router';
     class="navbar navbar-expand-md navbar-dark bg-success"
     aria-label="Navegação principal"
   >
-    <div class="container-fluid">
+    <div class="container-fluid px-4">
       <RouterLink
         class="navbar-brand fw-semibold"
         to="/pets"
